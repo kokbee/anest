@@ -1,6 +1,7 @@
 node_modules/
 .idea
 .DS_Store
+.env
 #public/c/*.less
 app/logs/*.log
 app/npm-debug.log

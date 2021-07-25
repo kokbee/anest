@@ -4,6 +4,7 @@ import {
   Get, Post, Req, Res
 } from '@nestjs/common'
 import {ApiOperation} from '@nestjs/swagger'
+import { User } from '../common/decorators/user.decorator'
 import { JoinRequestDTO } from './dto/join.request.dto'
 import { UsersService } from './users.service'
 
@@ -13,8 +14,8 @@ export class UsersController {
   }
 
   @Get()
-  getUsers(@Req() req) {
-    return req.user
+  getUsers(@User() user) {
+    return user
   }
 
   @ApiOperation({summary: '회원가입'})
