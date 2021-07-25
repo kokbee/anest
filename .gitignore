@@ -1,0 +1,17 @@
+node_modules/
+.idea
+.DS_Store
+#public/c/*.less
+app/logs/*.log
+app/npm-debug.log
+dist/
+dist-public/
+app/yarn-error.log
+/yarn.lock
+logs/
+json-data/
+out-tsc
+
+# ignore i18n data files
+temp/
+id_rsa
